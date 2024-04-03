@@ -3,7 +3,7 @@
 import { RegisterSchema } from "@/schemas";
 import { z } from "zod";
 
-import bcrypt from 'bcrypt'
+import bcryptjs from 'bcryptjs'
 import { db } from "@/lib/db";
 
 const RegisterAction = async (values: z.infer<typeof RegisterSchema>) => {
@@ -15,7 +15,7 @@ const RegisterAction = async (values: z.infer<typeof RegisterSchema>) => {
 
     const {name,email,password} = validatedFields.data
 
-    const hashedPassword = await bcrypt.hash(password,10)
+    const hashedPassword = await bcryptjs.hash(password,10)
 
     const exitingEmail = await db.user.findUnique({
         where:{

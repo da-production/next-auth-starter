@@ -18,8 +18,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       <section className="bg-slate-100 w-full min-h-screen flex justify-center items-center">
-            <div className=" w-6/12 px-4 mx-auto pt-6">
-                <div className="bg-gradient-to-tr from-sky-100 via-white to-violet-50 relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0">
+            <div className=" w-10/12 md:w-6/12 xl:w-5/12 p px-4 mx-auto pt-6">
+                <div className="bg-gradient-to-tr from-indigo-100 via-white to-slate-200 relative flex flex-col min-w-0 break-words w-full mb-6 shadow-md shadow-slate-100 rounded-lg bg-blueGray-200">
                     <div className="rounded-t mb-0 px-6 py-6">
                         <div className="text-center mb-3">
                             <h6 className="text-blueGray-500 text-sm font-bold">Sign in with</h6>

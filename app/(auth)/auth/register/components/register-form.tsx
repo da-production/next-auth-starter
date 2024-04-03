@@ -27,7 +27,6 @@ const RegisterForm = () => {
             })
         })
     }
-    console.log(errors);
     return (
     <form onSubmit={handleSubmit(submit)}>
         {
